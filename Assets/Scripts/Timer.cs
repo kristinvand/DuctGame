@@ -18,7 +18,7 @@ namespace Assets.Scripts
             if (playState)
             {
                 timerValue += Time.deltaTime;
-                timerText.text = (timerValue % 60).ToString("F2");
+                timerText.text = (timerValue % 60).ToString("F2") + " s";
             }
         }
     }
