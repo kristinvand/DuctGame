@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-[System.Serializable]
+[Serializable]
 public enum PlayerRunwayPosition
 {
-    Default,
-    Left,
+    Left = 0,
     Center,
     Right
 }
@@ -23,7 +22,7 @@ public class DuctManController : MonoBehaviour
     private Transform cameraTransform = null; 
     private Transform playerTransform = null;
     private float playerPositionX = 0f;
-    private PlayerRunwayPosition lastPosition = PlayerRunwayPosition.Default;
+    private PlayerRunwayPosition lastPosition = PlayerRunwayPosition.Center;
 
     // Start is called before the first frame update
     void Start()
@@ -49,7 +48,6 @@ public class DuctManController : MonoBehaviour
                 case PlayerRunwayPosition.Right:
                     playerPositionX = 2.25f;
                     break;
-
             }
         }
 
@@ -64,5 +62,23 @@ public class DuctManController : MonoBehaviour
 
         //todo: this could be a function of player movement
         DuctTapeOuterTransform.Rotate(new Vector3(0f, 0f, -TapeRotationalVelocityZ));
+    }
+
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            var directionalMovement = context.ReadValue<Vector2>();
+            var movementX = directionalMovement.x;
+
+            if (movementX > 0 && PlayerPosition < PlayerRunwayPosition.Right)
+            {
+                PlayerPosition += 1;
+            }
+            else if (movementX < 0 && PlayerPosition > PlayerRunwayPosition.Left)
+            {
+                PlayerPosition -= 1;
+            }
+        }
     }
 }
