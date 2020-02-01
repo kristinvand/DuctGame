@@ -18,7 +18,7 @@ public class DuctManController : MonoBehaviour
     public Camera MainCameraReference;
     public PlayerRunwayPosition PlayerPosition = PlayerRunwayPosition.Center;
     public Transform DuctTapeOuterTransform;
-    public float TapeRotatonalVelocityZ = 1f;
+    public float TapeRotationalVelocityZ = 1f;
 
     private Transform cameraTransform = null; 
     private Transform playerTransform = null;
@@ -63,6 +63,6 @@ public class DuctManController : MonoBehaviour
         cameraTransform.position = new Vector3(playerPositionX, cameraTransform.position.y, playerTransform.position.z - CameraDistance);
 
         //todo: this could be a function of player movement
-        DuctTapeOuterTransform.Rotate(new Vector3(0f, 0f, -TapeRotatonalVelocityZ));
+        DuctTapeOuterTransform.Rotate(new Vector3(0f, 0f, -TapeRotationalVelocityZ));
     }
 }
