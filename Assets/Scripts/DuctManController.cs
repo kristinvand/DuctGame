@@ -5,8 +5,7 @@ using UnityEngine.InputSystem;
 [Serializable]
 public enum PlayerRunwayPosition
 {
-    Default = 0,
-    Left,
+    Left = 0,
     Center,
     Right
 }
@@ -23,7 +22,7 @@ public class DuctManController : MonoBehaviour
     private Transform cameraTransform = null; 
     private Transform playerTransform = null;
     private float playerPositionX = 0f;
-    private PlayerRunwayPosition lastPosition = PlayerRunwayPosition.Default;
+    private PlayerRunwayPosition lastPosition = PlayerRunwayPosition.Center;
 
     // Start is called before the first frame update
     void Start()
@@ -49,7 +48,6 @@ public class DuctManController : MonoBehaviour
                 case PlayerRunwayPosition.Right:
                     playerPositionX = 2.25f;
                     break;
-
             }
         }
 

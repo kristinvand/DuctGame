@@ -919,7 +919,7 @@ MonoBehaviour:
   ForwardVelocity: 0.01
   CameraDistance: 3
   MainCameraReference: {fileID: 1167964804}
-  PlayerPosition: 2
+  PlayerPosition: 1
   DuctTapeOuterTransform: {fileID: 450642635}
   TapeRotationalVelocityZ: 1
 --- !u!114 &349129470
