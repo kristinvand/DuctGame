@@ -6,8 +6,8 @@ namespace Assets.Scripts
     public enum SceneMapping
     {
         MainMenu = 0,
-        MainGame = 1,
-        Cutscene = 2
+        IntroCutscene = 1,
+        MainGame = 2,
     }
 
     class MainMenuController : MonoBehaviour
