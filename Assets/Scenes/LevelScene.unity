@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2331,6 +2331,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!114 &450642660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450642613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b837dda355429a93e0605f5686af6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RedSkin: {fileID: 2100000, guid: 03d51274a9e2f42fba0bbdae08c9cbd8, type: 2}
+  BlueSkin: {fileID: 2100000, guid: 1225d3b930ef24b6ab342efd63b23cff, type: 2}
+  ZebraSkin: {fileID: 2100000, guid: 966c1c84c9abf47d1a062aea6aca7018, type: 2}
 --- !u!4 &450642663 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7266339713278482964, guid: 9d7832a9dec8c4614afdb3b21bfd0e8c,
