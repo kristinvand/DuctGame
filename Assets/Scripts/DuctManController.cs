@@ -11,7 +11,7 @@ public enum PlayerRunwayPosition
     Right
 }
 
-public class DucBoiController : MonoBehaviour
+public class DuctManController : MonoBehaviour
 {
     public float ForwardVelocity = 1f;
     public float CameraDistance = 3f;
