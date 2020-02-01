@@ -206,12 +206,12 @@ public class DuctManController : MonoBehaviour
                 if (movementX > 0)
                 {
                     changeLaneDelay = 0f;
-                    PlayerPosition++;
+                    PlayerPosition--;
                 }
                 else if (movementX < 0)
                 {
                     changeLaneDelay = 0f;
-                    PlayerPosition--;
+                    PlayerPosition++;
                 }
             }
 
