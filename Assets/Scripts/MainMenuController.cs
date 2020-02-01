@@ -6,14 +6,15 @@ namespace Assets.Scripts
     public enum SceneMapping
     {
         MainMenu = 0,
-        MainGame = 1,
-        Cutscene = 2
+        IntroCutscene = 1,
+        MainGame = 2,
     }
 
     class MainMenuController : MonoBehaviour
     {
-        public void LoadMainGame()
+        public void LoadMainGame(string ColorChoice = "Duct")
         {
+            PlayerPrefs.SetString("Color", ColorChoice);
             SceneManager.LoadScene((int)SceneMapping.MainGame);
         }
 
