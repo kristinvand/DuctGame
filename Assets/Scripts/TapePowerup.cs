@@ -12,7 +12,7 @@ public class TapePowerup : MonoBehaviour
     public GameObject pickupEffect;
 
     public UnityEvent onPickup = new UnityEvent();
-
+    
     private void Update()
     {
         transform.Rotate(transform.up, rotatationSpeed);
@@ -30,4 +30,4 @@ public class TapePowerup : MonoBehaviour
             Destroy(gameObject);
         }
     }
-}  
+}
