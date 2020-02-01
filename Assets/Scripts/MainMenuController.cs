@@ -15,7 +15,7 @@ namespace Assets.Scripts
         public void LoadMainGame(string ColorChoice = "Duct")
         {
             PlayerPrefs.SetString("Color", ColorChoice);
-            SceneManager.LoadScene((int)SceneMapping.MainGame);
+            SceneManager.LoadScene((int)SceneMapping.IntroCutscene);
         }
 
         public void ExitApplication()
