@@ -28,6 +28,9 @@ public class DuctManController : MonoBehaviour
     private Vector3 playerRotation = Vector3.zero;
     private int lastPosition = 0;
     private float timeSinceLaneChange = 2f;
+    [SerializeField]
+    private LayTape layTape;
+    public bool isTaping = false;
 
     private readonly Vector3 downRotation = Vector3.zero;
     private readonly Vector3 leftRotation = new Vector3(0, 0, -90);
@@ -226,6 +229,20 @@ public class DuctManController : MonoBehaviour
             {
                 PlayerPosition = 21;
             }
+        }
+    }
+
+    private void OnFire(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            layTape.EnableTape();
+            isTaping = true;
+        }
+        if (context.canceled)
+        {
+            layTape.DisableTape();
+            isTaping = false;
         }
     }
 
