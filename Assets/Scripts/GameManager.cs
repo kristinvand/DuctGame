@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using Assets.Scripts;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class GameManager : MonoBehaviour
 
     public Canvas canvas;
     public GameObject announcement;
+    public GameObject ScreenFlash;
     string[] announcements = new string[]
     {
         "Mega time!",
@@ -46,7 +48,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //StartCoroutine(MakeAnnouncements());
+        StartCoroutine(MakeAnnouncements());
         //MakeAnnouncement(Color.blue, "THIS IS AN ANNOUNCEMENT");
     }
 
@@ -70,6 +72,7 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(5);
             int i = Random.RandomRange(0, announcements.Length);
             MakeAnnouncement(Color.yellow, announcements[i]);
+            FlashScreen(Color.red);
         }
     }
 
@@ -84,4 +87,15 @@ public class GameManager : MonoBehaviour
         announcement.GetComponent<Animation>().Play();
 
     }
+
+    public void FlashScreen(Color c)
+    {
+
+        Image image = ScreenFlash.GetComponent<Image>();
+        Animation anim = ScreenFlash.GetComponent<Animation>();
+        image.color = c;
+        anim.Play();
+    }
+
+
 }
