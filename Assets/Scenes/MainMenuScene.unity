@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 1
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -1738,6 +1738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d529ef6890f61243903f435c00bf97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CharacterSelectionFlow: {fileID: 305574700}
 --- !u!114 &353184413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2849,6 +2850,7 @@ GameObject:
   - component: {fileID: 521529811}
   - component: {fileID: 521529810}
   - component: {fileID: 521529812}
+  - component: {fileID: 521529813}
   m_Layer: 5
   m_Name: MainPanel
   m_TagString: Untagged
@@ -2926,6 +2928,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!114 &521529813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521529808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 56512669ae6d7e64c81a7473e8b9ba18,
+    type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 1824585889}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: UI
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &553609529
 GameObject:
   m_ObjectHideFlags: 0
@@ -3361,7 +3394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 1
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -5249,7 +5282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 1
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -6262,8 +6295,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 305574700}
-        m_MethodName: SetActive
+      - m_Target: {fileID: 353184412}
+        m_MethodName: TriggerCharacterSelection
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6319,8 +6352,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1824585891}
   - component: {fileID: 1824585890}
-  - component: {fileID: 1824585889}
   - component: {fileID: 1824585892}
+  - component: {fileID: 1824585889}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -6337,16 +6370,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 1824585888}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
+  m_RepeatRate: 0.1
+  m_ActionsAsset: {fileID: -944628639613478452, guid: 56512669ae6d7e64c81a7473e8b9ba18,
+    type: 3}
+  m_PointAction: {fileID: 1054132383583890850, guid: 56512669ae6d7e64c81a7473e8b9ba18,
+    type: 3}
+  m_MoveAction: {fileID: 3710738434707379630, guid: 56512669ae6d7e64c81a7473e8b9ba18,
+    type: 3}
+  m_SubmitAction: {fileID: 8056856818456041789, guid: 56512669ae6d7e64c81a7473e8b9ba18,
+    type: 3}
+  m_CancelAction: {fileID: -1967631576421560919, guid: 56512669ae6d7e64c81a7473e8b9ba18,
+    type: 3}
+  m_LeftClickAction: {fileID: 2064916234097673511, guid: 56512669ae6d7e64c81a7473e8b9ba18,
+    type: 3}
+  m_MiddleClickAction: {fileID: 3279352641294131588, guid: 56512669ae6d7e64c81a7473e8b9ba18,
+    type: 3}
+  m_RightClickAction: {fileID: 3837173908680883260, guid: 56512669ae6d7e64c81a7473e8b9ba18,
+    type: 3}
+  m_ScrollWheelAction: {fileID: 4502412055082496612, guid: 56512669ae6d7e64c81a7473e8b9ba18,
+    type: 3}
+  m_TrackedDevicePositionAction: {fileID: 0}
+  m_TrackedDeviceOrientationAction: {fileID: 0}
+  m_TrackedDeviceSelectAction: {fileID: 0}
 --- !u!114 &1824585890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6359,7 +6408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 2140159273}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1824585891
@@ -7704,7 +7753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 1
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -7971,8 +8020,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 305574700}
-        m_MethodName: SetActive
+      - m_Target: {fileID: 353184412}
+        m_MethodName: TriggerCharacterSelection
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

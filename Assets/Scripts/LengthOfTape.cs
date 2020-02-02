@@ -5,17 +5,29 @@ using UnityEngine;
 public class LengthOfTape : MonoBehaviour
 {
     [SerializeField]
-    GameObject ductTapeLength;
+    GameObject ductTapeBar;
+
+    [SerializeField]
+    GameObject ductTapeRefill;
 
     float emptyRollXValue = 0.0f;
-    private Vector3 scaleChange = new Vector3(-0.001f, 0, 0f);
-    private Vector3 positionChange = new Vector3(0f, 0, 0f);
+    private Vector3 tapeDeplete = new Vector3(-0.001f, 0, 0f);
+    private Vector3 tapeReplenish = new Vector3(0.01f, 0, 0f);
 
     void Update()
     {
-        if (ductTapeLength.transform.localScale.x > emptyRollXValue){
-            ductTapeLength.transform.localScale += scaleChange;
-            ductTapeLength.transform.position += positionChange;
+        if (ductTapeBar.transform.localScale.x > emptyRollXValue)
+        {
+            ductTapeBar.transform.localScale += tapeDeplete;
         }
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject == ductTapeRefill)
+        {
+            ductTapeBar.transform.localScale += tapeReplenish;
+        }
+    }
+
 }
