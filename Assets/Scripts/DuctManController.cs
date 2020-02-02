@@ -27,7 +27,7 @@ public class DuctManController : MonoBehaviour
     private float playerPositionY = 0f;
     private Vector3 playerRotation = Vector3.zero;
     private int lastPosition = 0;
-    private float timeSinceLaneChange = 0f;
+    private float timeSinceLaneChange = 2f;
 
     private readonly Vector3 downRotation = Vector3.zero;
     private readonly Vector3 leftRotation = new Vector3(0, 0, -90);
