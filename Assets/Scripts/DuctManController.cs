@@ -270,18 +270,22 @@ public class DuctManController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Crack" && isTaping)
+        if (other.tag == "Crack" && isTaping)
         {
             GameManager.instance.AddPoints(100);
             AudioManager.instance.PlaySound("FillCrack");
 
             Animator anim = other.gameObject.GetComponent<Animator>();
 
-            if(anim)
+            if (anim)
             {
                 anim.SetTrigger("Tape");
             }
         }
-        else if(other.tag == "Damagable") LengthOfTape.rollFillCurrent -= 25f;
+        else if (other.tag == "Damagable")
+        {
+            LengthOfTape.rollFillCurrent -= 25f;
+            AudioManager.instance.PlaySound("TakeDamage");
+        }
     }
 }
