@@ -33696,7 +33696,7 @@ GameObject:
   - component: {fileID: 5590209993382719627}
   m_Layer: 0
   m_Name: WallVent_Left
-  m_TagString: Untagged
+  m_TagString: Damagable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33710,7 +33710,7 @@ Transform:
   m_GameObject: {fileID: 5590209993382719624}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -3.35, y: 4.56, z: 113.65}
-  m_LocalScale: {x: 0.4048447, y: 0.4048447, z: 0.4048447}
+  m_LocalScale: {x: 0.40484473, y: 0.40484473, z: 0.4048447}
   m_Children:
   - {fileID: 5590209991678970786}
   - {fileID: 5590209992158328943}
@@ -33747,7 +33747,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5590209993382719624}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 4.5
   m_Height: 1

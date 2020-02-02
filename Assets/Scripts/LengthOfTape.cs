@@ -21,8 +21,10 @@ public class LengthOfTape : MonoBehaviour
 
     void Update()
     {
-        ductTapeBar.fillAmount = Mathf.Lerp(ductTapeBar.fillAmount, rollFillCurrent / rollFillMax, 0.1f);
+        rollFillCurrent = Mathf.Clamp(rollFillCurrent, 0, rollFillMax);
 
+        ductTapeBar.fillAmount = Mathf.Lerp(ductTapeBar.fillAmount, rollFillCurrent / rollFillMax, 0.1f);
+        
         //if (ductTapeBar.transform.localScale.x > emptyRollXValue)
         //{
         //    ductTapeBar.transform.localScale += tapeDeplete;

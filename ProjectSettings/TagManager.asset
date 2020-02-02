@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DuctTapeLength
   - Crack
+  - Damagable
   layers:
   - Default
   - TransparentFX

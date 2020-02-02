@@ -235,6 +235,6 @@ public class DuctManController : MonoBehaviour
         {
             GameManager.instance.AddPoints(100);
         }
-        else LengthOfTape.rollFillCurrent -= 25f;
+        else if(other.tag == "Damagable") LengthOfTape.rollFillCurrent -= 25f;
     }
 }

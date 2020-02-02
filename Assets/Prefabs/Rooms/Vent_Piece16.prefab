@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &2000618784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4293838590975972337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ca52a8ad58f15c4a961ce18fe58eaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &9220045868232432459
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,21 +498,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2181793600307004579, guid: 7f9025f452e50304bb000910a489bb74,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.40484473
-      objectReference: {fileID: 0}
-    - target: {fileID: 2181793600307004579, guid: 7f9025f452e50304bb000910a489bb74,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.40484473
-      objectReference: {fileID: 0}
-    - target: {fileID: 2181793600307004579, guid: 7f9025f452e50304bb000910a489bb74,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4048447
-      objectReference: {fileID: 0}
     - target: {fileID: 2181793600307004590, guid: 7f9025f452e50304bb000910a489bb74,
         type: 3}
       propertyPath: m_Name
@@ -524,6 +522,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WallVent_Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 5590209993382719624, guid: fc135acc8f638b344844ce0c36266f45,
+        type: 3}
+      propertyPath: m_TagString
+      value: Damagable
+      objectReference: {fileID: 0}
+    - target: {fileID: 5590209993382719627, guid: fc135acc8f638b344844ce0c36266f45,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5590209993382719629, guid: fc135acc8f638b344844ce0c36266f45,
         type: 3}
@@ -670,21 +678,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5590209993382719629, guid: fc135acc8f638b344844ce0c36266f45,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.40484473
-      objectReference: {fileID: 0}
-    - target: {fileID: 5590209993382719629, guid: fc135acc8f638b344844ce0c36266f45,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.40484473
-      objectReference: {fileID: 0}
-    - target: {fileID: 5590209993382719629, guid: fc135acc8f638b344844ce0c36266f45,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4048447
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc135acc8f638b344844ce0c36266f45, type: 3}
 --- !u!4 &6868189150081029557 stripped
@@ -782,6 +775,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: afcac9053bd84484ba2850b167123407, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0bccdf9cb28e794f93866a225f0ce08, type: 3}
+--- !u!1 &4293838590975972337 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4927757870525418903, guid: c0bccdf9cb28e794f93866a225f0ce08,
+    type: 3}
+  m_PrefabInstance: {fileID: 9220045868725509734}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9207398694983436325 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 14476765578860099, guid: c0bccdf9cb28e794f93866a225f0ce08,

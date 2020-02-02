@@ -435,10 +435,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3430101967049643278}
     m_Modifications:
+    - target: {fileID: 8191793391978010296, guid: a4990f1dd6e917c4197817db5b01bda7,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8191793391978010297, guid: a4990f1dd6e917c4197817db5b01bda7,
         type: 3}
       propertyPath: m_Name
       value: WallVent_Bottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191793391978010297, guid: a4990f1dd6e917c4197817db5b01bda7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Damagable
       objectReference: {fileID: 0}
     - target: {fileID: 8191793391978010298, guid: a4990f1dd6e917c4197817db5b01bda7,
         type: 3}
@@ -525,10 +535,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3430101967049643278}
     m_Modifications:
+    - target: {fileID: 8191793391978010296, guid: a4990f1dd6e917c4197817db5b01bda7,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8191793391978010297, guid: a4990f1dd6e917c4197817db5b01bda7,
         type: 3}
       propertyPath: m_Name
       value: WallVent_Bottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191793391978010297, guid: a4990f1dd6e917c4197817db5b01bda7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Damagable
       objectReference: {fileID: 0}
     - target: {fileID: 8191793391978010298, guid: a4990f1dd6e917c4197817db5b01bda7,
         type: 3}
@@ -685,10 +705,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.4048447
       objectReference: {fileID: 0}
+    - target: {fileID: 261205976847861286, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 261205976847861287, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
         type: 3}
       propertyPath: m_Name
       value: WallVent_Top
+      objectReference: {fileID: 0}
+    - target: {fileID: 261205976847861287, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Damagable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf75c1f3b76b2594f8e6ecffd407e89b, type: 3}
@@ -775,10 +805,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.4048447
       objectReference: {fileID: 0}
+    - target: {fileID: 261205976847861286, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 261205976847861287, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
         type: 3}
       propertyPath: m_Name
       value: WallVent_Top
+      objectReference: {fileID: 0}
+    - target: {fileID: 261205976847861287, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Damagable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf75c1f3b76b2594f8e6ecffd407e89b, type: 3}
@@ -865,10 +905,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.4048447
       objectReference: {fileID: 0}
+    - target: {fileID: 261205976847861286, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 261205976847861287, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
         type: 3}
       propertyPath: m_Name
       value: WallVent_Top
+      objectReference: {fileID: 0}
+    - target: {fileID: 261205976847861287, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Damagable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf75c1f3b76b2594f8e6ecffd407e89b, type: 3}
@@ -955,10 +1005,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.4048447
       objectReference: {fileID: 0}
+    - target: {fileID: 261205976847861286, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 261205976847861287, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
         type: 3}
       propertyPath: m_Name
       value: WallVent_Top
+      objectReference: {fileID: 0}
+    - target: {fileID: 261205976847861287, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Damagable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf75c1f3b76b2594f8e6ecffd407e89b, type: 3}
@@ -975,10 +1035,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3430101967049643278}
     m_Modifications:
+    - target: {fileID: 8191793391978010296, guid: a4990f1dd6e917c4197817db5b01bda7,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8191793391978010297, guid: a4990f1dd6e917c4197817db5b01bda7,
         type: 3}
       propertyPath: m_Name
       value: WallVent_Bottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191793391978010297, guid: a4990f1dd6e917c4197817db5b01bda7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Damagable
       objectReference: {fileID: 0}
     - target: {fileID: 8191793391978010298, guid: a4990f1dd6e917c4197817db5b01bda7,
         type: 3}
@@ -1065,10 +1135,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3430101967049643278}
     m_Modifications:
+    - target: {fileID: 8191793391978010296, guid: a4990f1dd6e917c4197817db5b01bda7,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8191793391978010297, guid: a4990f1dd6e917c4197817db5b01bda7,
         type: 3}
       propertyPath: m_Name
       value: WallVent_Bottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191793391978010297, guid: a4990f1dd6e917c4197817db5b01bda7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Damagable
       objectReference: {fileID: 0}
     - target: {fileID: 8191793391978010298, guid: a4990f1dd6e917c4197817db5b01bda7,
         type: 3}

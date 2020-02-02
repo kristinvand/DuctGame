@@ -425,6 +425,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!114 &563060188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8197058128888806630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ca52a8ad58f15c4a961ce18fe58eaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!114 &563060187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8197058129025280875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ca52a8ad58f15c4a961ce18fe58eaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1001 &608767359247891902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -502,10 +528,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.4048447
       objectReference: {fileID: 0}
+    - target: {fileID: 261205976847861286, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 261205976847861287, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
         type: 3}
       propertyPath: m_Name
       value: WallVent_Top
+      objectReference: {fileID: 0}
+    - target: {fileID: 261205976847861287, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Damagable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf75c1f3b76b2594f8e6ecffd407e89b, type: 3}
@@ -610,6 +646,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3864973986381738353}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8197058128888806630 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4927757870525418903, guid: c0bccdf9cb28e794f93866a225f0ce08,
+    type: 3}
+  m_PrefabInstance: {fileID: 3864973986381738353}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3864973986509760252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -705,6 +747,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3864973986509760252}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8197058129025280875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4927757870525418903, guid: c0bccdf9cb28e794f93866a225f0ce08,
+    type: 3}
+  m_PrefabInstance: {fileID: 3864973986509760252}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4422335266565367080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -712,10 +760,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3864973984763386380}
     m_Modifications:
+    - target: {fileID: 8191793391978010296, guid: a4990f1dd6e917c4197817db5b01bda7,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8191793391978010297, guid: a4990f1dd6e917c4197817db5b01bda7,
         type: 3}
       propertyPath: m_Name
       value: WallVent_Bottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191793391978010297, guid: a4990f1dd6e917c4197817db5b01bda7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Damagable
       objectReference: {fileID: 0}
     - target: {fileID: 8191793391978010298, guid: a4990f1dd6e917c4197817db5b01bda7,
         type: 3}
@@ -872,10 +930,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.4048447
       objectReference: {fileID: 0}
+    - target: {fileID: 261205976847861286, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 261205976847861287, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
         type: 3}
       propertyPath: m_Name
       value: WallVent_Top
+      objectReference: {fileID: 0}
+    - target: {fileID: 261205976847861287, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Damagable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf75c1f3b76b2594f8e6ecffd407e89b, type: 3}
@@ -892,10 +960,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3864973984763386380}
     m_Modifications:
+    - target: {fileID: 8191793391978010296, guid: a4990f1dd6e917c4197817db5b01bda7,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8191793391978010297, guid: a4990f1dd6e917c4197817db5b01bda7,
         type: 3}
       propertyPath: m_Name
       value: WallVent_Bottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191793391978010297, guid: a4990f1dd6e917c4197817db5b01bda7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Damagable
       objectReference: {fileID: 0}
     - target: {fileID: 8191793391978010298, guid: a4990f1dd6e917c4197817db5b01bda7,
         type: 3}

@@ -429,6 +429,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4821740123392404205}
     m_Modifications:
+    - target: {fileID: 2181793600307004577, guid: 7f9025f452e50304bb000910a489bb74,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2181793600307004579, guid: 7f9025f452e50304bb000910a489bb74,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -504,6 +509,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallVent_Right
       objectReference: {fileID: 0}
+    - target: {fileID: 2181793600307004590, guid: 7f9025f452e50304bb000910a489bb74,
+        type: 3}
+      propertyPath: m_TagString
+      value: Damagable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f9025f452e50304bb000910a489bb74, type: 3}
 --- !u!4 &2253236633717504826 stripped
@@ -519,10 +529,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4821740123392404205}
     m_Modifications:
+    - target: {fileID: 8191793391978010296, guid: a4990f1dd6e917c4197817db5b01bda7,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8191793391978010297, guid: a4990f1dd6e917c4197817db5b01bda7,
         type: 3}
       propertyPath: m_Name
       value: WallVent_Bottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191793391978010297, guid: a4990f1dd6e917c4197817db5b01bda7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Damagable
       objectReference: {fileID: 0}
     - target: {fileID: 8191793391978010298, guid: a4990f1dd6e917c4197817db5b01bda7,
         type: 3}

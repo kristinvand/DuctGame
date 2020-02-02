@@ -459,7 +459,7 @@ MonoBehaviour:
   PlayerPosition: 0
   DuctTapeOuterTransform: {fileID: 450642635}
   TapeRotationalVelocityZ: 1
-  changeLaneDelay: 2
+  changeLaneDelay: 0
   changeLaneSpeed: 0.1
 --- !u!114 &349129470
 MonoBehaviour:
@@ -2747,6 +2747,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Points: 0
+  MaxTape: 100
+  CurrentTape: 100
 --- !u!114 &1745146100
 MonoBehaviour:
   m_ObjectHideFlags: 0
