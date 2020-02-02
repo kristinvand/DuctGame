@@ -25,6 +25,8 @@ public class TapePowerup : MonoBehaviour
             //Add tape
             LengthOfTape.rollFillCurrent += 25f;
             AudioManager.instance.PlaySound("TapePickUp");
+            GameManager.instance.MakeAnnouncement(Color.green, "Tape reload!");
+            GameManager.instance.FlashScreen(Color.green);
 
             Instantiate(pickupEffect, transform.position, transform.rotation);
 

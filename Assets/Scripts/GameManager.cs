@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public float rollFillMax = LengthOfTape.rollFillMax;
     public float rollFillCurrent = LengthOfTape.rollFillCurrent;
     //MainMenuController mainMenuController;
+    public float StartingRoomScrollSpeed = 0.15f;
 
     public Canvas canvas;
     public GameObject announcement;
@@ -48,6 +49,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        RoomMoving.roomScrollSpeed = StartingRoomScrollSpeed;
         //StartCoroutine(MakeAnnouncements());
         //MakeAnnouncement(Color.blue, "THIS IS AN ANNOUNCEMENT");
     }
