@@ -35,11 +35,14 @@ public class TapePowerup : MonoBehaviour
 
             if (audioClips.Count > 0)
             {
-                if (DuctManController.instance.audioSource.isPlaying)
+                if (Random.Range(0, 100) < 25)
                 {
-                    DuctManController.instance.audioSource.Stop();
+                    if (DuctManController.instance.audioSource.isPlaying)
+                    {
+                        DuctManController.instance.audioSource.Stop();
+                    }
+                    DuctManController.instance.audioSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Count - 1)]);
                 }
-                DuctManController.instance.audioSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Count - 1)]);
             }
 
             Instantiate(pickupEffect, transform.position, transform.rotation);
