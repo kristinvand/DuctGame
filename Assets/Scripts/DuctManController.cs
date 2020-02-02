@@ -35,6 +35,7 @@ public class DuctManController : MonoBehaviour
     [SerializeField]
     private LayTape layTape;
     public bool isTaping = false;
+    //public bool isDashing = false;
 
     private readonly Vector3 downRotation = Vector3.zero;
     private readonly Vector3 leftRotation = new Vector3(0, 0, -90);
