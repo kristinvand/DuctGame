@@ -309,6 +309,14 @@ public class DuctManController : MonoBehaviour
         }
     }
 
+    public void OnQuitGame(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         //if (other.tag == "Crack" && isTaping)

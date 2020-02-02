@@ -5,6 +5,7 @@ using UnityEngine;
 public class LayTape : MonoBehaviour
 {
 
+    public int VoiceClipProbability = 25;
     LineRenderer LR;
     public bool taping = false;
     Vector3 LongTape = new Vector3(0, 0, -10);
@@ -24,9 +25,12 @@ public class LayTape : MonoBehaviour
     public void EnableTape()
     {
         taping = true;
-        int voiceIndex = Random.Range(0, TapeVoiceClips.Length);
-        DuctManAudioSource.clip = TapeVoiceClips[voiceIndex];
-        DuctManAudioSource.Play();
+        if (Random.Range(0, 100) < VoiceClipProbability)
+        {
+            int voiceIndex = Random.Range(0, TapeVoiceClips.Length);
+            DuctManAudioSource.clip = TapeVoiceClips[voiceIndex];
+            DuctManAudioSource.Play();
+        }
     }
 
     public void DisableTape()
