@@ -11,6 +11,34 @@ public enum PlayerRunwayPosition
     Right
 }
 
+[Serializable]
+public class StatTracker
+{
+    public int cracksMissed;
+    public int cracksFilled;
+    public int ventsHit;
+    public int fansHit;
+    public int ductTapeCollected;
+
+    public void StackTracker()
+    {
+        cracksMissed = 0;
+        cracksFilled = 0;
+        ventsHit = 0;
+        fansHit = 0;
+        ductTapeCollected = 0;
+    }
+
+    public void StackTracker(int missed, int filled, int vents, int fans, int tape)
+    {
+        cracksMissed = missed;
+        cracksFilled = filled;
+        ventsHit = vents;
+        fansHit = fans;
+        ductTapeCollected = tape;
+    }
+}
+
 public class DuctManController : MonoBehaviour
 {
     public static DuctManController instance;
@@ -24,6 +52,7 @@ public class DuctManController : MonoBehaviour
     public float changeLaneDelay = 2.0f;
     public float changeLaneSpeed = 0.1f;
     public Animator animator;
+    public StatTracker stats = new StatTracker();
 
     private Transform cameraTransform = null; 
     private Transform playerTransform = null;
@@ -270,18 +299,43 @@ public class DuctManController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Crack" && isTaping)
+        //if (other.tag == "Crack" && isTaping)
+        //{
+            //GameManager.instance.AddPoints(100);
+            //AudioManager.instance.PlaySound("FillCrack");
+
+            //Animator anim = other.gameObject.GetComponent<Animator>();
+
+            //if(anim)
+            //{
+            //    anim.SetTrigger("Tape");
+            //}
+        //}
+        //else 
+        if (other.tag == "Damagable")
         {
+            if (other.gameObject.name.Contains("WallVent") || other.gameObject.name.Contains("Cube"))
+                stats.fansHit++;
+
+            LengthOfTape.rollFillCurrent -= 25f;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Crack" && isTaping)
+        {
+            other.tag = "Untagged";
+
             GameManager.instance.AddPoints(100);
             AudioManager.instance.PlaySound("FillCrack");
 
             Animator anim = other.gameObject.GetComponent<Animator>();
 
-            if(anim)
+            if (anim)
             {
                 anim.SetTrigger("Tape");
             }
         }
-        else if(other.tag == "Damagable") LengthOfTape.rollFillCurrent -= 25f;
     }
 }
