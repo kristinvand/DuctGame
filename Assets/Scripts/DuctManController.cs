@@ -17,7 +17,6 @@ public class StatTracker
     public int cracksMissed;
     public int cracksFilled;
     public int ventsHit;
-    public int fansHit;
     public int ductTapeCollected;
 
     public void StackTracker()
@@ -25,7 +24,6 @@ public class StatTracker
         cracksMissed = 0;
         cracksFilled = 0;
         ventsHit = 0;
-        fansHit = 0;
         ductTapeCollected = 0;
     }
 
@@ -34,7 +32,6 @@ public class StatTracker
         cracksMissed = missed;
         cracksFilled = filled;
         ventsHit = vents;
-        fansHit = fans;
         ductTapeCollected = tape;
     }
 }
@@ -326,8 +323,7 @@ public class DuctManController : MonoBehaviour
         //else 
         if (other.tag == "Damagable")
         {
-            if (other.gameObject.name.Contains("WallVent") || other.gameObject.name.Contains("Cube"))
-                stats.fansHit++;
+            stats.ventsHit++;
 
             LengthOfTape.rollFillCurrent -= 25f;
             AudioManager.instance.PlaySound("TakeDamage");
@@ -348,6 +344,8 @@ public class DuctManController : MonoBehaviour
             GameManager.instance.FlashScreen(Color.yellow);
 
             Animator anim = other.gameObject.GetComponent<Animator>();
+
+            stats.cracksFilled++;
 
             if (anim)
             {

@@ -5,7 +5,7 @@ using UnityEngine;
 public class RoomMoving : MonoBehaviour
 {
     public static float roomScrollSpeed = 0.15f;
-
+    
     private void Start()
     {
         //roomScrollSpeed = 0.15f;

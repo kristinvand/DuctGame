@@ -28,6 +28,9 @@ public class TapePowerup : MonoBehaviour
             GameManager.instance.MakeAnnouncement(Color.green, "Tape reload!");
             GameManager.instance.FlashScreen(Color.green);
 
+            DuctManController.instance.stats.ductTapeCollected++;
+            GameManager.instance.AddPoints(45);
+
             Instantiate(pickupEffect, transform.position, transform.rotation);
 
             onPickup.Invoke();

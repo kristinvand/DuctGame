@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public float rollFillCurrent = LengthOfTape.rollFillCurrent;
     //MainMenuController mainMenuController;
     public float StartingRoomScrollSpeed = 0.15f;
+    public bool gameOver = false;
 
     public Canvas canvas;
     public GameObject announcement;
@@ -32,6 +33,8 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        gameOver = false;
+
         if (instance != null && instance != this)
         {
             Destroy(this.gameObject);
@@ -62,7 +65,15 @@ public class GameManager : MonoBehaviour
 
         if (rollFillCurrent <= 0)
         {
-            SceneManager.LoadScene(0);
+            //SceneManager.LoadScene(0);
+
+            RoomMoving.roomScrollSpeed = 0f;
+
+            if (!gameOver)
+            {
+                gameOver = true;
+                DisplayEndStats.instance.gameObject.GetComponent<Animator>().SetTrigger("EndGame");
+            }
             //mainMenuController.TriggerCredits(true);
         }
     }

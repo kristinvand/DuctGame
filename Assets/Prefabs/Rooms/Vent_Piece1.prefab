@@ -64,7 +64,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67b6f148daffb2b4bbdbac63609294cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomScrollSpeed: -0.2
 --- !u!1 &3919272619075830058
 GameObject:
   m_ObjectHideFlags: 0
