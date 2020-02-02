@@ -10,7 +10,7 @@ public class RoomSpawning : MonoBehaviour
 
     public List<GameObject> rooms = new List<GameObject>();
 
-    [ReadOnly] public GameObject lastSpawnRef;
+    public GameObject lastSpawnRef;
 
     // Start is called before the first frame update
     void Start()

@@ -23,6 +23,8 @@ public class TapePowerup : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             //Add tape
+            LengthOfTape.rollFillCurrent += 25f;
+
             Instantiate(pickupEffect, transform.position, transform.rotation);
 
             onPickup.Invoke();
