@@ -342,6 +342,8 @@ public class DuctManController : MonoBehaviour
 
             GameManager.instance.AddPoints(100);
             AudioManager.instance.PlaySound("FillCrack");
+            GameManager.instance.MakeAnnouncement(Color.yellow, "Nice patchwork!");
+            GameManager.instance.FlashScreen(Color.yellow);
 
             Animator anim = other.gameObject.GetComponent<Animator>();
 
