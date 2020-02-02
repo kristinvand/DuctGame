@@ -50,6 +50,8 @@ public class DuctManController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Application.targetFrameRate = 60;
+
         timeSinceLaneChange += Time.deltaTime;
 
         switch (PlayerPosition)
