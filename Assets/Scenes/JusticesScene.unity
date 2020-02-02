@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -355,6 +355,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Vent_Piece14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6856675079676146753, guid: e7f7049dff77dcd44aacae10fad3da11,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6856675079676146759, guid: e7f7049dff77dcd44aacae10fad3da11,
         type: 3}
@@ -10230,6 +10235,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vent_Piece15
       objectReference: {fileID: 0}
+    - target: {fileID: 2829393526621133471, guid: 222df7dc60ba24d409a7353aa50d7ef5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 222df7dc60ba24d409a7353aa50d7ef5, type: 3}
 --- !u!1 &145476599
@@ -10415,7 +10425,7 @@ PrefabInstance:
     - target: {fileID: 7026775550759862497, guid: d4ffe42fef899da418652538cd27a0a0,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7026775550759862511, guid: d4ffe42fef899da418652538cd27a0a0,
         type: 3}
@@ -10455,7 +10465,7 @@ PrefabInstance:
     - target: {fileID: 7026775550759862511, guid: d4ffe42fef899da418652538cd27a0a0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 7026775550759862511, guid: d4ffe42fef899da418652538cd27a0a0,
         type: 3}
@@ -15859,6 +15869,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vent_Piece6
       objectReference: {fileID: 0}
+    - target: {fileID: 438774176355644610, guid: d273de111a4b7a84eb1aff2980ce7ae4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 438774176355644612, guid: d273de111a4b7a84eb1aff2980ce7ae4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16094,6 +16109,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vent_Piece23
       objectReference: {fileID: 0}
+    - target: {fileID: 3430101967049643276, guid: a07bb2abf388244408276aee18a08a48,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3430101967049643278, guid: a07bb2abf388244408276aee18a08a48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16218,6 +16238,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vent_Piece20
       objectReference: {fileID: 0}
+    - target: {fileID: 2963880655506747005, guid: 66a5993892703dc479e21eccfeaae907,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66a5993892703dc479e21eccfeaae907, type: 3}
 --- !u!1 &462169472
@@ -16339,6 +16364,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vent_Piece4
       objectReference: {fileID: 0}
+    - target: {fileID: 7106017000361313921, guid: fb90c403be1f31b4e8d6dd1d1d43c0ee,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7106017000361314047, guid: fb90c403be1f31b4e8d6dd1d1d43c0ee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16411,7 +16441,7 @@ PrefabInstance:
     - target: {fileID: 3864973984763386380, guid: 4cd821053444dce4ca68f90e86825387,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.723814
+      value: 38.8
       objectReference: {fileID: 0}
     - target: {fileID: 3864973984763386380, guid: 4cd821053444dce4ca68f90e86825387,
         type: 3}
@@ -16462,6 +16492,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Vent_Piece25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864973984763386382, guid: 4cd821053444dce4ca68f90e86825387,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cd821053444dce4ca68f90e86825387, type: 3}
@@ -16625,6 +16660,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vent_Piece10
       objectReference: {fileID: 0}
+    - target: {fileID: 472518777352455262, guid: ff78624991a75524eb7bbe9576726fef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff78624991a75524eb7bbe9576726fef, type: 3}
 --- !u!1 &601402049
@@ -16731,6 +16771,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Vent_Piece26
+      objectReference: {fileID: 0}
+    - target: {fileID: 3922217782568771281, guid: 10a535fb7de36f543b4ab92925dfbefc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3922217782568771283, guid: 10a535fb7de36f543b4ab92925dfbefc,
         type: 3}
@@ -17363,6 +17408,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vent_Piece8
       objectReference: {fileID: 0}
+    - target: {fileID: 7550166743269588999, guid: d60bbd6dbc776a34f9c53fd053b66ff8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d60bbd6dbc776a34f9c53fd053b66ff8, type: 3}
 --- !u!1 &698538814
@@ -17517,7 +17567,7 @@ PrefabInstance:
     - target: {fileID: 688958441205352838, guid: 2c41abfe54cd97b46ab41f2c0f077df1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 688958441205352838, guid: 2c41abfe54cd97b46ab41f2c0f077df1,
         type: 3}
@@ -17542,7 +17592,7 @@ PrefabInstance:
     - target: {fileID: 688958441205352856, guid: 2c41abfe54cd97b46ab41f2c0f077df1,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5875583761734409292, guid: 2c41abfe54cd97b46ab41f2c0f077df1,
         type: 3}
@@ -17685,7 +17735,7 @@ PrefabInstance:
     - target: {fileID: 4131370948094205954, guid: 0f441f9b0da1c2f428f454a23aba7bb2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4131370948094205954, guid: 0f441f9b0da1c2f428f454a23aba7bb2,
         type: 3}
@@ -17710,7 +17760,7 @@ PrefabInstance:
     - target: {fileID: 4131370948094205956, guid: 0f441f9b0da1c2f428f454a23aba7bb2,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f441f9b0da1c2f428f454a23aba7bb2, type: 3}
@@ -18791,6 +18841,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vent_Piece24
       objectReference: {fileID: 0}
+    - target: {fileID: 9213644331956979371, guid: 4b45436c11bedc8429396161e6f6247a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9213644331956979373, guid: 4b45436c11bedc8429396161e6f6247a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18859,6 +18914,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Vent_Piece7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171446353087570725, guid: 024526884faaa8646968e50e063f9ed2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7171446353087570727, guid: 024526884faaa8646968e50e063f9ed2,
         type: 3}
@@ -19041,7 +19101,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &864126471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23965,6 +24025,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vent_Piece12
       objectReference: {fileID: 0}
+    - target: {fileID: 5582594920063197255, guid: a252524fe074b9c478ecb3db6c980a20,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a252524fe074b9c478ecb3db6c980a20, type: 3}
 --- !u!1001 &942489647
@@ -24033,6 +24098,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Vent_Piece17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805591778266109110, guid: dd39587967368b94a96066abecac4015,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd39587967368b94a96066abecac4015, type: 3}
@@ -24193,6 +24263,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Vent_Piece21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821740123392404207, guid: 04e372df97ca7944d9758f94065eeb9e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04e372df97ca7944d9758f94065eeb9e, type: 3}
@@ -24443,6 +24518,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Vent_Piece13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2152535014502018839, guid: d17ba593a6ded8341aec9108934572da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d17ba593a6ded8341aec9108934572da, type: 3}
@@ -26056,6 +26136,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vent_Piece18
       objectReference: {fileID: 0}
+    - target: {fileID: 5070394917299167540, guid: 65b3b2067e0d2d04abb3ae5a1694a573,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5070394917299167542, guid: 65b3b2067e0d2d04abb3ae5a1694a573,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26179,6 +26264,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Vent_Piece19
+      objectReference: {fileID: 0}
+    - target: {fileID: 3919230094516020804, guid: a9bdf060d2d77e445820ffcd83b8b95c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9bdf060d2d77e445820ffcd83b8b95c, type: 3}
@@ -26463,7 +26553,7 @@ PrefabInstance:
     - target: {fileID: 3919272619040518048, guid: bb990ce6ac73508428c10d4772688b97,
         type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 3919272619040518048, guid: bb990ce6ac73508428c10d4772688b97,
         type: 3}
@@ -26488,7 +26578,7 @@ PrefabInstance:
     - target: {fileID: 3919272619040518050, guid: bb990ce6ac73508428c10d4772688b97,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6966515427855222737, guid: bb990ce6ac73508428c10d4772688b97,
         type: 3}
@@ -26634,6 +26724,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Vent_Piece9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177825305097648437, guid: 8679edb20a5133f4fbf2c5e0e851b23f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8177825305097648439, guid: 8679edb20a5133f4fbf2c5e0e851b23f,
         type: 3}
@@ -26975,6 +27070,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Vent_Piece5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587120700681202134, guid: 946dfd43a625fbe43a907098666970ec,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 946dfd43a625fbe43a907098666970ec, type: 3}
@@ -32086,6 +32186,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vent_Piece11
       objectReference: {fileID: 0}
+    - target: {fileID: 7796467082131109908, guid: 7375ac4a18fd6c24786760157a0dc23e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7375ac4a18fd6c24786760157a0dc23e, type: 3}
 --- !u!1 &1640124654
@@ -32680,6 +32785,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vent_Piece27
       objectReference: {fileID: 0}
+    - target: {fileID: 3655015198440075918, guid: 2341c85f2f81f4549bbedbcc73a11c26,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2341c85f2f81f4549bbedbcc73a11c26, type: 3}
 --- !u!1 &1755645814
@@ -33166,6 +33276,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Vent_Piece22
+      objectReference: {fileID: 0}
+    - target: {fileID: 5034764055775607015, guid: 35a28608246f87c438c58b88bab737b4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35a28608246f87c438c58b88bab737b4, type: 3}
@@ -48243,6 +48358,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Vent_Piece16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9220045868232432459, guid: b63dbe92ee536044f91825b2a6566e59,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b63dbe92ee536044f91825b2a6566e59, type: 3}
