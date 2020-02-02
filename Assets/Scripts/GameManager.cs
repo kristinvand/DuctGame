@@ -110,5 +110,8 @@ public class GameManager : MonoBehaviour
         anim.Play();
     }
 
-
+    public void QuitGame()
+    {
+        SceneManager.LoadScene("MainMenuScene");
+    }
 }
