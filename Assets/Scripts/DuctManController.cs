@@ -24,7 +24,7 @@ public class DuctManController : MonoBehaviour
     public float changeLaneDelay = 2.0f;
     public float changeLaneSpeed = 0.1f;
     public Animator animator;
-    
+
     private Transform cameraTransform = null; 
     private Transform playerTransform = null;
     private float playerPositionX = 0f;
