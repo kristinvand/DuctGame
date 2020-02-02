@@ -20,6 +20,7 @@ public class DuctManController : MonoBehaviour
     public float TapeRotationalVelocityZ = 1f;
     public float changeLaneDelay = 2.0f;
     public float changeLaneSpeed = 0.1f;
+    public Animator animator;
 
     private Transform cameraTransform = null; 
     private Transform playerTransform = null;
@@ -40,6 +41,8 @@ public class DuctManController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
+
         cameraTransform = MainCameraReference.transform;
         playerTransform = GetComponent<Transform>();
     }
@@ -167,6 +170,8 @@ public class DuctManController : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(playerRotation), changeLaneSpeed);
         //Quaternion.Euler(playerRotation)
 
+        animator.SetBool("Shitting", isTaping);
+
         #region Old system
         //if (lastPosition != PlayerPosition)
         //{
@@ -213,11 +218,13 @@ public class DuctManController : MonoBehaviour
                 {
                     changeLaneDelay = 0f;
                     PlayerPosition--;
+                    animator.SetTrigger("MoveLeft");
                 }
                 else if (movementX < 0)
                 {
                     changeLaneDelay = 0f;
                     PlayerPosition++;
+                    animator.SetTrigger("MoveRight");
                 }
             }
 
