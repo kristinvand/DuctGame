@@ -232,7 +232,7 @@ public class DuctManController : MonoBehaviour
         }
     }
 
-    private void OnFire(InputAction.CallbackContext context)
+    public void OnFire(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
