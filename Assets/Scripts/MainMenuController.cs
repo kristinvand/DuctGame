@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts
@@ -18,6 +19,14 @@ namespace Assets.Scripts
         public GameObject BackFromCreditsButton;
         public GameObject CharacterSelectionFlow;
         public GameObject CreditsFlow;
+
+        public void OnCancel()
+        {
+            CharacterSelectionFlow.SetActive(false);
+            CreditsFlow.SetActive(false);
+
+            EventSystem.current.SetSelectedGameObject(StartButton);
+        }
 
         public void TriggerCharacterSelection(bool show)
         {
