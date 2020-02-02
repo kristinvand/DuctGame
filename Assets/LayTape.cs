@@ -11,18 +11,6 @@ public class LayTape : MonoBehaviour
         LR = GetComponent<LineRenderer>();
     }
 
-    public void Update()
-    {
-        if (Input.GetKeyDown("t"))
-        {
-            EnableTape();
-        }
-        if (Input.GetKeyUp("t"))
-        {
-            DisableTape();
-        }
-    }
-
     public void EnableTape()
     {
         LR.enabled = true;
