@@ -234,6 +234,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1973063081057602409, guid: df4ae9feefc18e64c825424224f34c31,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3180514619726516442, guid: df4ae9feefc18e64c825424224f34c31,
+        type: 3}
+      propertyPath: TapeSoundEffects.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: ed03df5f6a4044ca4899d4ce5fc42720, type: 3}
     - target: {fileID: 7184832594894432117, guid: df4ae9feefc18e64c825424224f34c31,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -895,6 +905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d48d961581c5243b2aec02b88f0a17f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tmp: {fileID: 0}
 --- !u!114 &831932290
 MonoBehaviour:
   m_ObjectHideFlags: 0

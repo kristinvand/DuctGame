@@ -24,6 +24,7 @@ public class TapePowerup : MonoBehaviour
         {
             //Add tape
             LengthOfTape.rollFillCurrent += 25f;
+            AudioManager.instance.PlaySound("TapePickUp");
 
             Instantiate(pickupEffect, transform.position, transform.rotation);
 
