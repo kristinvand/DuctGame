@@ -285,7 +285,7 @@ public class DuctManController : MonoBehaviour
 
     public void OnFire(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && !GameManager.instance.gameOver)
         {
             layTape.EnableTape();
             isTaping = true;
@@ -299,7 +299,7 @@ public class DuctManController : MonoBehaviour
 
     public void OnDash(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && !GameManager.instance.gameOver)
         {
             isDashing = true;
         }
