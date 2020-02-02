@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(MakeAnnouncements());
+        //StartCoroutine(MakeAnnouncements());
         //MakeAnnouncement(Color.blue, "THIS IS AN ANNOUNCEMENT");
     }
 
