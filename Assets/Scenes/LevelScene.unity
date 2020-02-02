@@ -2763,6 +2763,7 @@ MonoBehaviour:
   Points: 0
   rollFillMax: 100
   rollFillCurrent: 0
+  StartingRoomScrollSpeed: 0.15
   canvas: {fileID: 1777975416}
   announcement: {fileID: 538466896}
   ScreenFlash: {fileID: 1275794735}
