@@ -58,6 +58,9 @@ public class DisplayEndStats : MonoBehaviour
                 men_dead = Random.Range(1, 9) * DuctManController.instance.stats.cracksMissed;
                 woman_dead = Random.Range(1, 7) * DuctManController.instance.stats.cracksMissed;
                 children_dead = Random.Range(1, 4) * DuctManController.instance.stats.cracksMissed;
+
+                if(DuctManController.instance.stats.cracksMissed >= DuctManController.instance.stats.cracksFilled)
+                    GetComponent<AudioSource>().Play();
             }
 
             if (IcracksMissed < DuctManController.instance.stats.cracksMissed)
