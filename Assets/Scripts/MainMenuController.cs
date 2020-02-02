@@ -19,11 +19,13 @@ namespace Assets.Scripts
         public GameObject BackFromCreditsButton;
         public GameObject CharacterSelectionFlow;
         public GameObject CreditsFlow;
+        public GameObject MainMenuFlow;
 
         public void OnCancel()
         {
             CharacterSelectionFlow.SetActive(false);
             CreditsFlow.SetActive(false);
+            MainMenuFlow.SetActive(true);
 
             EventSystem.current.SetSelectedGameObject(StartButton);
         }
@@ -31,12 +33,14 @@ namespace Assets.Scripts
         public void TriggerCharacterSelection(bool show)
         {
             CharacterSelectionFlow.SetActive(show);
+            MainMenuFlow.SetActive(!show);
             EventSystem.current.SetSelectedGameObject(show ? DuctTape1Button : StartButton);
         }
 
         public void TriggerCredits(bool show)
         {
             CreditsFlow.SetActive(show);
+            MainMenuFlow.SetActive(!show);
             EventSystem.current.SetSelectedGameObject(show ? BackFromCreditsButton : StartButton);
         }
 
