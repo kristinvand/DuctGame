@@ -11,6 +11,9 @@ public class RoomMoving : MonoBehaviour
         transform.position += new Vector3(0, 0, roomScrollSpeed);
 
         if (transform.position.z < -50f)
+        {
+            RoomSpawning.canSpawn = true;
             Destroy(gameObject);
+        }
     }
 }
