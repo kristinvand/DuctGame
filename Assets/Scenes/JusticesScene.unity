@@ -25435,7 +25435,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5647d693bcede18498a0a076fff3332b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnInterval: 1.3
   emptyRoom: {fileID: 5582594920063197255, guid: a252524fe074b9c478ecb3db6c980a20,
     type: 3}
   rooms:
@@ -25466,7 +25465,6 @@ MonoBehaviour:
   - {fileID: 3864973984763386382, guid: 4cd821053444dce4ca68f90e86825387, type: 3}
   - {fileID: 3922217782568771281, guid: 10a535fb7de36f543b4ab92925dfbefc, type: 3}
   - {fileID: 3655015198440075918, guid: 2341c85f2f81f4549bbedbcc73a11c26, type: 3}
-  timeUntilNextSpawn: 0
   lastSpawnRef: {fileID: 0}
 --- !u!1 &1614774306
 GameObject:
