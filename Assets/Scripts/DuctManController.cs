@@ -29,6 +29,11 @@ public class DuctManController : MonoBehaviour
     private int lastPosition = 0;
     private float timeSinceLaneChange = 0f;
 
+    private readonly Vector3 downRotation = Vector3.zero;
+    private readonly Vector3 leftRotation = new Vector3(0, 0, -90);
+    private readonly Vector3 upRotation = new Vector3(0, 0, -180);
+    private readonly Vector3 rightRotation = new Vector3(0, 0, 90);
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,112 +51,112 @@ public class DuctManController : MonoBehaviour
             case 0:
                 playerPositionX = 0f;
                 playerPositionY = 0f;
-                playerRotation = Vector3.zero;
+                playerRotation = downRotation;
                 break;
             case 1:
                 playerPositionX = -2f;
                 playerPositionY = 0f;
-                playerRotation = Vector3.zero;
+                playerRotation = downRotation;
                 break;
             case 2:
                 playerPositionX = -4f;
                 playerPositionY = 0f;
-                playerRotation = Vector3.zero;
+                playerRotation = downRotation;
                 break;
             case 3:
                 playerPositionX = -6f;
                 playerPositionY = 0f;
-                playerRotation = Vector3.zero;
+                playerRotation = downRotation;
                 break;
             case 4:
                 playerPositionX = -7.55f;
                 playerPositionY = 1f;
-                playerRotation = new Vector3(0, 0, -90);
+                playerRotation = leftRotation;
                 break;
             case 5:
                 playerPositionX = -7.55f;
                 playerPositionY = 3f;
-                playerRotation = new Vector3(0, 0, -90);
+                playerRotation = leftRotation;
                 break;
             case 6:
                 playerPositionX = -7.55f;
                 playerPositionY = 4.5f;
-                playerRotation = new Vector3(0, 0, -90);
+                playerRotation = leftRotation;
                 break;
             case 7:
                 playerPositionX = -7.55f;
                 playerPositionY = 6.25f;
-                playerRotation = new Vector3(0, 0, -90);
+                playerRotation = leftRotation;
                 break;
             case 8:
                 playerPositionX = -7.55f;
                 playerPositionY = 7f;
-                playerRotation = new Vector3(0, 0, -90);
+                playerRotation = leftRotation;
                 break;
             case 9:
                 playerPositionX = -4.5f;
                 playerPositionY = 9f;
-                playerRotation = new Vector3(0, 0, -180);
+                playerRotation = upRotation;
                 break;
             case 10:
                 playerPositionX = -2.25f;
                 playerPositionY = 9f;
-                playerRotation = new Vector3(0, 0, -180);
+                playerRotation = upRotation;
                 break;
             case 11:
                 playerPositionX = 0f;
                 playerPositionY = 9f;
-                playerRotation = new Vector3(0, 0, -180);
+                playerRotation = upRotation;
                 break;
             case 12:
                 playerPositionX = 2.25f;
                 playerPositionY = 9f;
-                playerRotation = new Vector3(0, 0, -180);
+                playerRotation = upRotation;
                 break;
             case 13:
                 playerPositionX = 4.5f;
                 playerPositionY = 9f;
-                playerRotation = new Vector3(0, 0, -180);
+                playerRotation = upRotation;
                 break;
             case 14:
                 playerPositionX = 6.25f;
                 playerPositionY = 9f;
-                playerRotation = new Vector3(0, 0, -180);
+                playerRotation = upRotation;
                 break;
             case 15:
                 playerPositionX = 7.5f;
                 playerPositionY = 7.5f;
-                playerRotation = new Vector3(0, 0, 90);
+                playerRotation = rightRotation;
                 break;
             case 16:
                 playerPositionX = 7.5f;
                 playerPositionY = 6.5f;
-                playerRotation = new Vector3(0, 0, 90);
+                playerRotation = rightRotation;
                 break;
             case 17:
                 playerPositionX = 7.5f;
                 playerPositionY = 4.5f;
-                playerRotation = new Vector3(0, 0, 90);
+                playerRotation = rightRotation;
                 break;
             case 18:
                 playerPositionX = 7.5f;
                 playerPositionY = 1.25f;
-                playerRotation = new Vector3(0, 0, 90);
+                playerRotation = rightRotation;
                 break;
             case 19:
                 playerPositionX = 6.25f;
                 playerPositionY = 0f;
-                playerRotation = Vector3.zero;
+                playerRotation = downRotation;
                 break;
             case 20:
                 playerPositionX = 4.75f;
                 playerPositionY = 0f;
-                playerRotation = Vector3.zero;
+                playerRotation = downRotation;
                 break;
             case 21:
                 playerPositionX = 2.5f;
                 playerPositionY = 0f;
-                playerRotation = Vector3.zero;
+                playerRotation = downRotation;
                 break;
         }
 
@@ -194,12 +199,10 @@ public class DuctManController : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext context)
     {
-            Debug.Log("Test");
         if (context.performed)
         {
             var directionalMovement = context.ReadValue<Vector2>();
             var movementX = directionalMovement.x;
-
 
             if (timeSinceLaneChange >= changeLaneDelay)
             {
@@ -216,18 +219,13 @@ public class DuctManController : MonoBehaviour
             }
 
             if (PlayerPosition > 21)
+            {
                 PlayerPosition = 0;
-            if (PlayerPosition < 0)
+            }
+            else if (PlayerPosition < 0)
+            {
                 PlayerPosition = 21;
-
-            //if (movementX > 0 && PlayerPosition < PlayerRunwayPosition.Right)
-            //{
-            //    PlayerPosition += 1;
-            //}
-            //else if (movementX < 0 && PlayerPosition > PlayerRunwayPosition.Left)
-            //{
-            //    PlayerPosition -= 1;
-            //}
+            }
         }
     }
 }
