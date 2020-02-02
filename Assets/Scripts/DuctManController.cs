@@ -228,4 +228,12 @@ public class DuctManController : MonoBehaviour
             }
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Crack")
+        {
+            GameManager.instance.AddPoints(100);
+        }
+    }
 }
