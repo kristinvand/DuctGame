@@ -318,6 +318,7 @@ public class DuctManController : MonoBehaviour
                 stats.fansHit++;
 
             LengthOfTape.rollFillCurrent -= 25f;
+            AudioManager.instance.PlaySound("TakeDamage");
         }
     }
 
