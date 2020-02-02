@@ -50,7 +50,6 @@ public class DuctManController : MonoBehaviour
     public Transform DuctTapeOuterTransform;
     public float TapeRotationalVelocityZ = 1f;
     public float changeLaneDelay = 2.0f;
-    public float dashDelay = 2.0f;
     public float changeLaneSpeed = 0.1f;
     public Animator animator;
     public StatTracker stats = new StatTracker();
@@ -62,7 +61,6 @@ public class DuctManController : MonoBehaviour
     private Vector3 playerRotation = Vector3.zero;
     private int lastPosition = 0;
     private float timeSinceLaneChange = 2f;
-    private float timeSinceLastDash = 2f;
     [SerializeField]
     private LayTape layTape;
     public bool isTaping = false;
@@ -89,7 +87,6 @@ public class DuctManController : MonoBehaviour
         Application.targetFrameRate = 60;
 
         timeSinceLaneChange += Time.deltaTime;
-        timeSinceLastDash += Time.deltaTime;
 
         switch (PlayerPosition)
         {
@@ -258,18 +255,8 @@ public class DuctManController : MonoBehaviour
         {
             var directionalMovement = context.ReadValue<Vector2>();
             var movementX = directionalMovement.x;
-            var movementY = directionalMovement.y;
 
-            if (movementY != 0 && timeSinceLastDash >= dashDelay)
-            {
-                if (movementY > 0)
-                {
-                    timeSinceLastDash = 0f;
-                    isDashing = true;
-                }
-            }
-
-            if (movementX != 0 && timeSinceLaneChange >= changeLaneDelay)
+            if (timeSinceLaneChange >= changeLaneDelay)
             {
                 if (movementX > 0)
                 {
@@ -294,10 +281,6 @@ public class DuctManController : MonoBehaviour
                 PlayerPosition = 21;
             }
         }
-        else if (isDashing && (!context.performed || context.canceled))
-        {
-            isDashing = false;
-        }
     }
 
     public void OnFire(InputAction.CallbackContext context)
@@ -316,7 +299,14 @@ public class DuctManController : MonoBehaviour
 
     public void OnDash(InputAction.CallbackContext context)
     {
-        // HACKED OUT, NOW IN MOVE FUNCTION
+        if (context.performed)
+        {
+            isDashing = true;
+        }
+        if (context.canceled)
+        {
+            isDashing = false;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -341,6 +331,8 @@ public class DuctManController : MonoBehaviour
 
             LengthOfTape.rollFillCurrent -= 25f;
             AudioManager.instance.PlaySound("TakeDamage");
+            GameManager.instance.MakeAnnouncement(Color.red, "Lost tape!");
+            GameManager.instance.FlashScreen(Color.red);
         }
     }
 
