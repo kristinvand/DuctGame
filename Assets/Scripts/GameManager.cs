@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public int Points = 0;
     public float rollFillMax = LengthOfTape.rollFillMax;
     public float rollFillCurrent = LengthOfTape.rollFillCurrent;
-    MainMenuController mainMenuController;
+    //MainMenuController mainMenuController;
 
     public Canvas canvas;
     public GameObject announcement;
@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
         if (rollFillCurrent <= 0)
         {
             SceneManager.LoadScene(0);
-            mainMenuController.TriggerCredits(true);
+            //mainMenuController.TriggerCredits(true);
         }
     }
 
