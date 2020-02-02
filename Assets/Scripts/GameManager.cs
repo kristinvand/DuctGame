@@ -1,13 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    MainMenuController mainMenuController;
     public int Points = 0;
-    public float MaxTape = 100f;
-    public float CurrentTape = 100f;
+    public float rollFillMax = LengthOfTape.rollFillMax;
+    public float rollFillCurrent = LengthOfTape.rollFillCurrent;
 
     private void Awake()
     {
@@ -34,7 +37,14 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        rollFillCurrent = LengthOfTape.rollFillCurrent;
+        rollFillMax = LengthOfTape.rollFillMax;
+
+        if (rollFillCurrent <= 0)
+        {
+            SceneManager.LoadScene(0);
+            mainMenuController.TriggerCredits(true);
+        }
     }
 
     IEnumerator DisableParticles()
@@ -43,7 +53,7 @@ public class GameManager : MonoBehaviour
         {
             yield return new WaitForSeconds(1);
             ParticleSystem[] PS = FindObjectsOfType<ParticleSystem>();
-            for(int i = 0; i < PS.Length; i++)
+            for (int i = 0; i < PS.Length; i++)
             {
                 Destroy(PS[i]);
             }
