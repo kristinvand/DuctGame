@@ -7,6 +7,8 @@ public class SetColor : MonoBehaviour
     public Material RedSkin;
     public Material BlueSkin;
     public Material ZebraSkin;
+
+    public LineRenderer LR;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,12 +18,15 @@ public class SetColor : MonoBehaviour
         {
             case "Red":
                 MR.material = RedSkin;
+                LR.material = RedSkin;
                 break;
             case "Blue":
                 MR.material = BlueSkin;
+                LR.material = BlueSkin;
                 break;
             case "Zebra":
                 MR.material = ZebraSkin;
+                LR.material = ZebraSkin;
                 break;
             default:
                 break;
