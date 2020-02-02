@@ -2005,6 +2005,7 @@ MonoBehaviour:
   BackFromCreditsButton: {fileID: 1729110116}
   CharacterSelectionFlow: {fileID: 305574700}
   CreditsFlow: {fileID: 283747349}
+  MainMenuFlow: {fileID: 521529808}
 --- !u!114 &353184413
 MonoBehaviour:
   m_ObjectHideFlags: 0
