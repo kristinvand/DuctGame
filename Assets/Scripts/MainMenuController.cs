@@ -12,6 +12,14 @@ namespace Assets.Scripts
 
     class MainMenuController : MonoBehaviour
     {
+        public GameObject CharacterSelectionFlow;
+
+        public void TriggerCharacterSelection(bool show)
+        {
+            CharacterSelectionFlow.SetActive(show);
+            GUI.FocusControl(show ? "Duct" : "StartButton");
+        }
+
         public void LoadMainGame(string ColorChoice = "Duct")
         {
             PlayerPrefs.SetString("Color", ColorChoice);
