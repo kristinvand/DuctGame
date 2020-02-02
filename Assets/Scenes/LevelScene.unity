@@ -6314,9 +6314,10 @@ GameObject:
   - component: {fileID: 1907266973}
   - component: {fileID: 1907266972}
   - component: {fileID: 1907266971}
+  - component: {fileID: 1907266974}
   m_Layer: 0
   m_Name: PieceOfDuctTape
-  m_TagString: Untagged
+  m_TagString: DuctTapeLength
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6392,12 +6393,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1907266970}
   m_LocalRotation: {x: -0, y: -0, z: -0.006775058, w: 0.9999771}
-  m_LocalPosition: {x: -960.2, y: -540.4, z: -25.369726}
-  m_LocalScale: {x: 0.9183982, y: 0.1574808, z: 2.382134}
+  m_LocalPosition: {x: -974.8, y: -540.22, z: -25.36973}
+  m_LocalScale: {x: 1.0336146, y: 0.15748084, z: 2.382134}
   m_Children: []
   m_Father: {fileID: 1777975417}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.776}
+--- !u!114 &1907266974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907266970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9509cb64be22b4ad98f8666d0ef19541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ductTapeLength: {fileID: 1907266970}
 --- !u!1 &1970216953
 GameObject:
   m_ObjectHideFlags: 0

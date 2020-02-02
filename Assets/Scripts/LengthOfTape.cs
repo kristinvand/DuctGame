@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class LengthOfTape : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    GameObject ductTapeLength;
 
-    // Update is called once per frame
+    float emptyRollXValue = 0.0001768463f;
+    private Vector3 scaleChange = new Vector3(-0.001f, 0, 0f);
+    private Vector3 positionChange = new Vector3(0f, 0, 0f);
+
     void Update()
     {
-        
+        if (ductTapeLength.transform.localScale.x > emptyRollXValue){
+            ductTapeLength.transform.localScale += scaleChange;
+            ductTapeLength.transform.position += positionChange;
+        }
     }
 }
