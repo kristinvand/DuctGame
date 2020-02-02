@@ -13,7 +13,7 @@ public class AudioManager : MonoBehaviour
     public float fadeTime = 2f;
     public float stepTime = 0.1f;
 
-    AudioSource audioSource;
+    public AudioSource audioSource;
 
     AudioSource[] otherSounds;
 
