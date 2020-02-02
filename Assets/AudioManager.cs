@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -45,8 +46,8 @@ public class AudioManager : MonoBehaviour
 
     IEnumerator FadeAudio(AudioClip newAudio)
     {
-
-        for(int i = 0; i < fadeTime/ stepTime; i++)
+        yield return new WaitForSeconds(stepTime);
+        for (int i = 0; i < fadeTime/ stepTime; i++)
         {
             audioSource.volume -= 1 / (fadeTime / stepTime);
             yield return new WaitForSeconds(stepTime);
@@ -61,5 +62,11 @@ public class AudioManager : MonoBehaviour
         }
         audioSource.volume = 1;
 
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log("OnSceneLoaded: " + scene.name);
+        Debug.Log(mode);
     }
 }
