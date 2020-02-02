@@ -208,6 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a44780c2e8ee6492daf4ce393a13e02a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  VoiceClipProbability: 25
   taping: 0
   TapeSoundEffects:
   - {fileID: 8300000, guid: d726e8ab364364a68a28c9f53c9b6efd, type: 3}
@@ -220,6 +221,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d578ca001d30d9a47a638e37387be1cf, type: 3}
   - {fileID: 8300000, guid: 4b9bb7e927669c44284c9d1365855ddb, type: 3}
   - {fileID: 8300000, guid: 4ad1151f1c7e01249a82e0292a9be314, type: 3}
+  - {fileID: 8300000, guid: 5065bdf28d429f14a9ce48fd404b2878, type: 3}
+  - {fileID: 8300000, guid: 9ac54a34b29513142bbe2f0e80571df5, type: 3}
+  - {fileID: 8300000, guid: 18ccea675b498b742a9d0178ed4fbfbf, type: 3}
+  - {fileID: 8300000, guid: cb6017f2906f0544697152d06e18e135, type: 3}
   DuctManAudioSource: {fileID: 2751492944646553906}
 --- !u!82 &548610652147409873
 AudioSource:
@@ -757,6 +762,7 @@ MonoBehaviour:
     cracksFilled: 0
     ventsHit: 0
     ductTapeCollected: 0
+  audioSource: {fileID: 0}
   layTape: {fileID: 3180514619726516442}
   isTaping: 0
   isDashing: 0
@@ -887,6 +893,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 71a7a691-f1a3-49d3-b4a6-827144e149cc
     m_ActionName: Player/Dash[/Keyboard/z]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1a1f3d73-b3c5-46c8-8e2d-57d963cb8b92
+    m_ActionName: Player/Quit Game[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
