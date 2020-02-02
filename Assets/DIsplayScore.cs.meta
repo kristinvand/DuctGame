@@ -1,11 +1,20 @@
-fileFormatVersion: 2
-guid: d48d961581c5243b2aec02b88f0a17f3
-MonoImporter:
-  externalObjects: {}
-  serializedVersion: 2
-  defaultReferences: []
-  executionOrder: 0
-  icon: {instanceID: 0}
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+
+public class DisplayScore : MonoBehaviour
+{
+    TextMeshProUGUI tmp;
+    // Start is called before the first frame upda
+    private void Start()
+    {
+        tmp = GetComponent<TextMeshProUGUI>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        tmp.text = "Score: " + GameManager.instance.Points;
+    }
+}

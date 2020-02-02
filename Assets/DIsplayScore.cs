@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class DIsplayScore : MonoBehaviour
+public class DisplayScore : MonoBehaviour
 {
     TextMeshProUGUI tmp;
     // Start is called before the first frame upda
-    private void Start()
+    void Start()
     {
         tmp = GetComponent<TextMeshProUGUI>();
     }
