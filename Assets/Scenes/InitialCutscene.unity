@@ -22197,6 +22197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d529ef6890f61243903f435c00bf97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CharacterSelectionFlow: {fileID: 0}
 --- !u!1 &747134822
 GameObject:
   m_ObjectHideFlags: 0
@@ -42204,7 +42205,7 @@ MonoBehaviour:
     type: 3}
   m_CancelAction: {fileID: -1967631576421560919, guid: 56512669ae6d7e64c81a7473e8b9ba18,
     type: 3}
-  m_LeftClickAction: {fileID: 8056856818456041789, guid: 56512669ae6d7e64c81a7473e8b9ba18,
+  m_LeftClickAction: {fileID: 2064916234097673511, guid: 56512669ae6d7e64c81a7473e8b9ba18,
     type: 3}
   m_MiddleClickAction: {fileID: 3279352641294131588, guid: 56512669ae6d7e64c81a7473e8b9ba18,
     type: 3}
