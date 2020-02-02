@@ -230,7 +230,7 @@ MonoBehaviour:
     m_NormalTrigger: Nothing
     m_HighlightedTrigger: Highlight
     m_PressedTrigger: 
-    m_SelectedTrigger: 
+    m_SelectedTrigger: Highlight
     m_DisabledTrigger: Deselect
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1354780625}
@@ -3315,7 +3315,7 @@ MonoBehaviour:
     m_NormalTrigger: Nothing
     m_HighlightedTrigger: Highlight
     m_PressedTrigger: 
-    m_SelectedTrigger: 
+    m_SelectedTrigger: Highlight
     m_DisabledTrigger: Deselect
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1787062536}
@@ -3851,7 +3851,7 @@ MonoBehaviour:
     m_NormalTrigger: Nothing
     m_HighlightedTrigger: Highlight
     m_PressedTrigger: 
-    m_SelectedTrigger: 
+    m_SelectedTrigger: Highlight
     m_DisabledTrigger: Deselect
   m_Interactable: 1
   m_TargetGraphic: {fileID: 259804493}
@@ -6143,7 +6143,7 @@ MonoBehaviour:
     m_NormalTrigger: Nothing
     m_HighlightedTrigger: Highlight
     m_PressedTrigger: 
-    m_SelectedTrigger: 
+    m_SelectedTrigger: Highlight
     m_DisabledTrigger: Deselect
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1773917432}
@@ -6978,7 +6978,7 @@ MonoBehaviour:
     m_NormalTrigger: Nothing
     m_HighlightedTrigger: Highlight
     m_PressedTrigger: 
-    m_SelectedTrigger: 
+    m_SelectedTrigger: Highlight
     m_DisabledTrigger: Deselect
   m_Interactable: 1
   m_TargetGraphic: {fileID: 89695668}
@@ -8505,7 +8505,7 @@ MonoBehaviour:
     m_NormalTrigger: Nothing
     m_HighlightedTrigger: Highlight
     m_PressedTrigger: 
-    m_SelectedTrigger: 
+    m_SelectedTrigger: Highlight
     m_DisabledTrigger: Deselect
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1094293908}
@@ -8687,7 +8687,7 @@ MonoBehaviour:
     m_NormalTrigger: Nothing
     m_HighlightedTrigger: Highlight
     m_PressedTrigger: 
-    m_SelectedTrigger: 
+    m_SelectedTrigger: Highlight
     m_DisabledTrigger: Deselect
   m_Interactable: 1
   m_TargetGraphic: {fileID: 440270647}
@@ -8924,7 +8924,7 @@ MonoBehaviour:
     m_NormalTrigger: Nothing
     m_HighlightedTrigger: Highlight
     m_PressedTrigger: 
-    m_SelectedTrigger: 
+    m_SelectedTrigger: Highlight
     m_DisabledTrigger: Deselect
   m_Interactable: 1
   m_TargetGraphic: {fileID: 592750374}
