@@ -9640,9 +9640,10 @@ GameObject:
   - component: {fileID: 6088299699449392841}
   - component: {fileID: 6088299699449392838}
   - component: {fileID: 3889389839954130977}
+  - component: {fileID: 574261850955582643}
   m_Layer: 0
   m_Name: LightCrack_Top
-  m_TagString: Untagged
+  m_TagString: Crack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9703,6 +9704,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &574261850955582643
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6088299699449392839}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 4}
+  m_Center: {x: 0, y: 1.59, z: 0}
 --- !u!1 &6088299699459779584
 GameObject:
   m_ObjectHideFlags: 0
