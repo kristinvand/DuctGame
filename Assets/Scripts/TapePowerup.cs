@@ -34,7 +34,7 @@ public class TapePowerup : MonoBehaviour
             GameManager.instance.AddPoints(45);
 
             if(audioClips.Count > 0)
-                DuctManController.instance.audioSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Count)]);
+                DuctManController.instance.audioSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Count - 1)]);
 
             Instantiate(pickupEffect, transform.position, transform.rotation);
 

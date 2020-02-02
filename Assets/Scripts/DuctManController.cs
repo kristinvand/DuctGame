@@ -79,6 +79,7 @@ public class DuctManController : MonoBehaviour
 
         cameraTransform = MainCameraReference.transform;
         playerTransform = GetComponent<Transform>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
