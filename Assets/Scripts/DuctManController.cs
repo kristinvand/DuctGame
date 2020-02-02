@@ -273,6 +273,7 @@ public class DuctManController : MonoBehaviour
         if(other.tag == "Crack" && isTaping)
         {
             GameManager.instance.AddPoints(100);
+            AudioManager.instance.PlaySound("FillCrack");
 
             Animator anim = other.gameObject.GetComponent<Animator>();
 

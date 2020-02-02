@@ -15,6 +15,8 @@ public class AudioManager : MonoBehaviour
 
     AudioSource audioSource;
 
+    AudioSource[] otherSounds;
+
 
     private void Awake()
     {
@@ -32,6 +34,7 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        otherSounds = GetComponentsInChildren<AudioSource>();
     }
     // Start is called before the first frame update
     public void SwitchToGameMusic()
@@ -68,5 +71,17 @@ public class AudioManager : MonoBehaviour
     {
         Debug.Log("OnSceneLoaded: " + scene.name);
         Debug.Log(mode);
+    }
+
+    public void PlaySound(string SoundName)
+    {
+        for(int i = 0; i < otherSounds.Length; i++)
+        {
+            if(otherSounds[i].gameObject.name == SoundName)
+            {
+                otherSounds[i].Play();
+                return;
+            }
+        }
     }
 }
