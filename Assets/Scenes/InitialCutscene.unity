@@ -11047,11 +11047,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-<<<<<<< HEAD
-  m_Text: Skip cutscene
-=======
   m_Text: ENTER to skip cutscene
->>>>>>> 4f6f8d06e614496c32714198ea3d0f96b04968a5
 --- !u!222 &413366847
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -27286,11 +27282,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 100}
-<<<<<<< HEAD
-  m_SizeDelta: {x: 250, y: 100}
-=======
   m_SizeDelta: {x: 325, y: 75}
->>>>>>> 4f6f8d06e614496c32714198ea3d0f96b04968a5
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &819057680
 MonoBehaviour:
