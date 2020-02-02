@@ -39,6 +39,7 @@ public class StatTracker
 public class DuctManController : MonoBehaviour
 {
     public static DuctManController instance;
+    public static AudioSource audioSourceRef;
 
     public float ForwardVelocity = 1f;
     public float CameraDistance = 3f;
@@ -50,6 +51,7 @@ public class DuctManController : MonoBehaviour
     public float changeLaneSpeed = 0.1f;
     public Animator animator;
     public StatTracker stats = new StatTracker();
+    public AudioSource audioSource;
 
     private Transform cameraTransform = null; 
     private Transform playerTransform = null;
@@ -71,6 +73,7 @@ public class DuctManController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioSourceRef = audioSource;
         instance = this;
         animator = GetComponent<Animator>();
 

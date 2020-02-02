@@ -10,8 +10,10 @@ public class TapePowerup : MonoBehaviour
     public float rotatationSpeed = 1.0f;
 
     public GameObject pickupEffect;
-
+    
     public UnityEvent onPickup = new UnityEvent();
+
+    public List<AudioClip> audioClips = new List<AudioClip>();
     
     private void Update()
     {
@@ -30,7 +32,7 @@ public class TapePowerup : MonoBehaviour
 
             DuctManController.instance.stats.ductTapeCollected++;
             GameManager.instance.AddPoints(45);
-
+            DuctManController.instance.audioSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Count)]);
             Instantiate(pickupEffect, transform.position, transform.rotation);
 
             onPickup.Invoke();
