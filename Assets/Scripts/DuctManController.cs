@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 [Serializable]
 public enum PlayerRunwayPosition
@@ -12,6 +13,8 @@ public enum PlayerRunwayPosition
 
 public class DuctManController : MonoBehaviour
 {
+    public static DuctManController instance;
+
     public float ForwardVelocity = 1f;
     public float CameraDistance = 3f;
     public Camera MainCameraReference;
@@ -21,7 +24,7 @@ public class DuctManController : MonoBehaviour
     public float changeLaneDelay = 2.0f;
     public float changeLaneSpeed = 0.1f;
     public Animator animator;
-
+    
     private Transform cameraTransform = null; 
     private Transform playerTransform = null;
     private float playerPositionX = 0f;
@@ -41,6 +44,7 @@ public class DuctManController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
         animator = GetComponent<Animator>();
 
         cameraTransform = MainCameraReference.transform;
@@ -174,6 +178,14 @@ public class DuctManController : MonoBehaviour
 
         animator.SetBool("Shitting", isTaping);
 
+        if(isTaping)
+        {
+            LengthOfTape.rollFillCurrent -= 0.5f;
+        }
+
+        //if (LengthOfTape.rollFillCurrent <= 0)
+        //    SceneManager.LoadScene(sceneToLoadOnDeath);
+
         #region Old system
         //if (lastPosition != PlayerPosition)
         //{
@@ -257,9 +269,16 @@ public class DuctManController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Crack")
+        if(other.tag == "Crack" && isTaping)
         {
             GameManager.instance.AddPoints(100);
+
+            Animator anim = other.gameObject.GetComponent<Animator>();
+
+            if(anim)
+            {
+                anim.SetTrigger("Tape");
+            }
         }
         else if(other.tag == "Damagable") LengthOfTape.rollFillCurrent -= 25f;
     }

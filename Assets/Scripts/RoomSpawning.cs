@@ -15,6 +15,8 @@ public class RoomSpawning : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        RoomMoving.roomScrollSpeed = 0.15f;
+
         canSpawn = true;
 
         Instantiate(emptyRoom, new Vector3(0, 4.5f, 0f), Quaternion.identity);
@@ -32,10 +34,12 @@ public class RoomSpawning : MonoBehaviour
 
             lastSpawnRef = Instantiate
             (
-                rooms[Random.Range(0, rooms.Count)], 
-                new Vector3(0, 4.5f, lastSpawnRef == null ? 86f : (lastSpawnRef.transform.position.z + 21.5f)), 
+                rooms[Random.Range(0, rooms.Count)],
+                new Vector3(0, 4.5f, lastSpawnRef == null ? 86f : (lastSpawnRef.transform.position.z + 21.5f)),
                 Quaternion.identity
             );
+
+            RoomMoving.roomScrollSpeed += 0.001f;
         }
     }
 }
