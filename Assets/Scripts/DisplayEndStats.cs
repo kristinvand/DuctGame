@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class DisplayEndStats : MonoBehaviour
@@ -15,6 +16,8 @@ public class DisplayEndStats : MonoBehaviour
     public Text ventsHit;
     public Text ductTapeCollected;
     public Text finalScore;
+
+    public GameObject mainMenuButton;
 
     public int IcracksMissed;
     public int Imen;
@@ -109,6 +112,8 @@ public class DisplayEndStats : MonoBehaviour
             ventsHit.text = "Vents Hit: " + IventsHit;
             ductTapeCollected.text = "Duct Tape Collected: " + IductTapeCollected;
             finalScore.text = "" + IfinalScore;
+
+            EventSystem.current.SetSelectedGameObject(mainMenuButton);
         }
     }
 }
