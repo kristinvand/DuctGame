@@ -212,7 +212,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
     m_HighlightedColor: {r: 1, g: 0.9902291, b: 0.8632076, a: 1}
@@ -227,11 +227,11 @@ MonoBehaviour:
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
+    m_NormalTrigger: Nothing
+    m_HighlightedTrigger: Highlight
+    m_PressedTrigger: 
+    m_SelectedTrigger: Highlight
+    m_DisabledTrigger: Deselect
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1354780625}
   m_OnClick:
@@ -3238,6 +3238,7 @@ GameObject:
   - component: {fileID: 539940414}
   - component: {fileID: 539940413}
   - component: {fileID: 539940412}
+  - component: {fileID: 539940416}
   m_Layer: 5
   m_Name: CreditsButton
   m_TagString: Untagged
@@ -3296,7 +3297,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -3311,11 +3312,11 @@ MonoBehaviour:
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
+    m_NormalTrigger: Nothing
+    m_HighlightedTrigger: Highlight
+    m_PressedTrigger: 
+    m_SelectedTrigger: Highlight
+    m_DisabledTrigger: Deselect
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1787062536}
   m_OnClick:
@@ -3368,6 +3369,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 539940410}
   m_CullTransparentMesh: 0
+--- !u!95 &539940416
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539940410}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2bd931139b342459091284c2eda97d3d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &553609529
 GameObject:
   m_ObjectHideFlags: 0
@@ -3813,7 +3833,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
     m_HighlightedColor: {r: 1, g: 0.9902291, b: 0.8632076, a: 1}
@@ -3828,11 +3848,11 @@ MonoBehaviour:
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
+    m_NormalTrigger: Nothing
+    m_HighlightedTrigger: Highlight
+    m_PressedTrigger: 
+    m_SelectedTrigger: Highlight
+    m_DisabledTrigger: Deselect
   m_Interactable: 1
   m_TargetGraphic: {fileID: 259804493}
   m_OnClick:
@@ -6105,7 +6125,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
     m_HighlightedColor: {r: 1, g: 0.9902291, b: 0.8632076, a: 1}
@@ -6120,11 +6140,11 @@ MonoBehaviour:
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
+    m_NormalTrigger: Nothing
+    m_HighlightedTrigger: Highlight
+    m_PressedTrigger: 
+    m_SelectedTrigger: Highlight
+    m_DisabledTrigger: Deselect
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1773917432}
   m_OnClick:
@@ -6881,6 +6901,7 @@ GameObject:
   - component: {fileID: 1729110120}
   - component: {fileID: 1729110119}
   - component: {fileID: 1729110118}
+  - component: {fileID: 1729110122}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -6939,7 +6960,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -6954,11 +6975,11 @@ MonoBehaviour:
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
+    m_NormalTrigger: Nothing
+    m_HighlightedTrigger: Highlight
+    m_PressedTrigger: 
+    m_SelectedTrigger: Highlight
+    m_DisabledTrigger: Deselect
   m_Interactable: 1
   m_TargetGraphic: {fileID: 89695668}
   m_OnClick:
@@ -7011,6 +7032,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729110116}
   m_CullTransparentMesh: 0
+--- !u!95 &1729110122
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729110116}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2bd931139b342459091284c2eda97d3d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1773917429
 GameObject:
   m_ObjectHideFlags: 0
@@ -8388,6 +8428,7 @@ GameObject:
   - component: {fileID: 2000341483}
   - component: {fileID: 2000341482}
   - component: {fileID: 2000341481}
+  - component: {fileID: 2000341485}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -8446,7 +8487,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -8461,11 +8502,11 @@ MonoBehaviour:
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
+    m_NormalTrigger: Nothing
+    m_HighlightedTrigger: Highlight
+    m_PressedTrigger: 
+    m_SelectedTrigger: Highlight
+    m_DisabledTrigger: Deselect
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1094293908}
   m_OnClick:
@@ -8518,6 +8559,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000341479}
   m_CullTransparentMesh: 0
+--- !u!95 &2000341485
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000341479}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2bd931139b342459091284c2eda97d3d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2005350868
 GameObject:
   m_ObjectHideFlags: 0
@@ -8609,7 +8669,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
     m_HighlightedColor: {r: 1, g: 0.9902291, b: 0.8632076, a: 1}
@@ -8624,11 +8684,11 @@ MonoBehaviour:
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
+    m_NormalTrigger: Nothing
+    m_HighlightedTrigger: Highlight
+    m_PressedTrigger: 
+    m_SelectedTrigger: Highlight
+    m_DisabledTrigger: Deselect
   m_Interactable: 1
   m_TargetGraphic: {fileID: 440270647}
   m_OnClick:
@@ -8846,7 +8906,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
     m_HighlightedColor: {r: 1, g: 0.9902291, b: 0.8632076, a: 1}
@@ -8861,11 +8921,11 @@ MonoBehaviour:
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
+    m_NormalTrigger: Nothing
+    m_HighlightedTrigger: Highlight
+    m_PressedTrigger: 
+    m_SelectedTrigger: Highlight
+    m_DisabledTrigger: Deselect
   m_Interactable: 1
   m_TargetGraphic: {fileID: 592750374}
   m_OnClick:
