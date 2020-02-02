@@ -235,5 +235,6 @@ public class DuctManController : MonoBehaviour
         {
             GameManager.instance.AddPoints(100);
         }
+        else LengthOfTape.rollFillCurrent -= 25f;
     }
 }
