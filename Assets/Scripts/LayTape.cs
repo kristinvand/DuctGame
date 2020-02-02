@@ -27,6 +27,10 @@ public class LayTape : MonoBehaviour
         taping = true;
         if (Random.Range(0, 100) < VoiceClipProbability)
         {
+            if (DuctManAudioSource.isPlaying)
+            {
+                DuctManAudioSource.Stop();
+            }
             int voiceIndex = Random.Range(0, TapeVoiceClips.Length);
             DuctManAudioSource.clip = TapeVoiceClips[voiceIndex];
             DuctManAudioSource.Play();
