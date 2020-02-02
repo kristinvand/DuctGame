@@ -32,7 +32,10 @@ public class TapePowerup : MonoBehaviour
 
             DuctManController.instance.stats.ductTapeCollected++;
             GameManager.instance.AddPoints(45);
-            DuctManController.instance.audioSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Count)]);
+
+            if(audioClips.Count > 0)
+                DuctManController.instance.audioSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Count)]);
+
             Instantiate(pickupEffect, transform.position, transform.rotation);
 
             onPickup.Invoke();
