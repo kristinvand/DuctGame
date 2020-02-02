@@ -431,6 +431,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8587120700681202120}
     m_Modifications:
+    - target: {fileID: 8191793391774904409, guid: a4990f1dd6e917c4197817db5b01bda7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8191793391978010297, guid: a4990f1dd6e917c4197817db5b01bda7,
         type: 3}
       propertyPath: m_Name
@@ -491,6 +496,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8191793392538420872, guid: a4990f1dd6e917c4197817db5b01bda7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191793392720313423, guid: a4990f1dd6e917c4197817db5b01bda7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4990f1dd6e917c4197817db5b01bda7, type: 3}
 --- !u!4 &6590221207267348592 stripped
@@ -506,6 +521,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8587120700681202120}
     m_Modifications:
+    - target: {fileID: 261205976842937149, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 261205976847861284, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -566,6 +586,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallVent_Top
       objectReference: {fileID: 0}
+    - target: {fileID: 261205977245120667, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 261205977405303877, guid: cf75c1f3b76b2594f8e6ecffd407e89b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf75c1f3b76b2594f8e6ecffd407e89b, type: 3}
 --- !u!4 &8348781685689420900 stripped
@@ -581,6 +611,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8587120700681202120}
     m_Modifications:
+    - target: {fileID: 5590209991742572320, guid: fc135acc8f638b344844ce0c36266f45,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5590209993382719624, guid: fc135acc8f638b344844ce0c36266f45,
         type: 3}
       propertyPath: m_Name
@@ -789,6 +824,11 @@ PrefabInstance:
     - target: {fileID: 6088299699449392841, guid: cd7c8aece72be3e44b848ff541039cf2,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6088299699459779584, guid: cd7c8aece72be3e44b848ff541039cf2,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

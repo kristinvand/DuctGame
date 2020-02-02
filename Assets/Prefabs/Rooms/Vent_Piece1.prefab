@@ -579,6 +579,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3919272619040518048}
     m_Modifications:
+    - target: {fileID: 2181793600006272794, guid: 7f9025f452e50304bb000910a489bb74,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2181793600307004579, guid: 7f9025f452e50304bb000910a489bb74,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -638,6 +643,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WallVent_Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 2181793600993645642, guid: 7f9025f452e50304bb000910a489bb74,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2181793601247551740, guid: 7f9025f452e50304bb000910a489bb74,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f9025f452e50304bb000910a489bb74, type: 3}

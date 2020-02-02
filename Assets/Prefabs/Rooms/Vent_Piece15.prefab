@@ -644,6 +644,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2829393526621133469}
     m_Modifications:
+    - target: {fileID: 2181793600006272794, guid: 7f9025f452e50304bb000910a489bb74,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2181793600307004577, guid: 7f9025f452e50304bb000910a489bb74,
         type: 3}
       propertyPath: m_IsTrigger
@@ -728,6 +733,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Damagable
+      objectReference: {fileID: 0}
+    - target: {fileID: 2181793600993645642, guid: 7f9025f452e50304bb000910a489bb74,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2181793601247551740, guid: 7f9025f452e50304bb000910a489bb74,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f9025f452e50304bb000910a489bb74, type: 3}

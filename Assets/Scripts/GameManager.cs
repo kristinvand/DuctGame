@@ -1,16 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Assets.Scripts;
 using UnityEngine;
+using TMPro;
 using UnityEngine.SceneManagement;
+using Assets.Scripts;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    MainMenuController mainMenuController;
     public int Points = 0;
     public float rollFillMax = LengthOfTape.rollFillMax;
     public float rollFillCurrent = LengthOfTape.rollFillCurrent;
+    MainMenuController mainMenuController;
+
+    public Canvas canvas;
+    public GameObject announcement;
+    string[] announcements = new string[]
+    {
+        "Mega time!",
+        "Speed speed!!!",
+        "Never stop!",
+        "Tape it down!",
+        "UH OH!",
+        "STOP PLAYING",
+        "NEVER!",
+        "Tape time!!!"
+    };
 
     private void Awake()
     {
@@ -31,7 +46,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //StartCoroutine(DisableParticles());
+        //StartCoroutine(MakeAnnouncements());
+        //MakeAnnouncement(Color.blue, "THIS IS AN ANNOUNCEMENT");
     }
 
     // Update is called once per frame
@@ -47,16 +63,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    IEnumerator DisableParticles()
+    IEnumerator MakeAnnouncements()
     {
         while (true)
         {
-            yield return new WaitForSeconds(1);
-            ParticleSystem[] PS = FindObjectsOfType<ParticleSystem>();
-            for (int i = 0; i < PS.Length; i++)
-            {
-                Destroy(PS[i]);
-            }
+            yield return new WaitForSeconds(5);
+            int i = Random.RandomRange(0, announcements.Length);
+            MakeAnnouncement(Color.yellow, announcements[i]);
         }
+    }
+
+    public void MakeAnnouncement(Color c, string words = "ANNOUNCEMENT")
+    {
+        TextMeshProUGUI tmp = announcement.GetComponent<TextMeshProUGUI>();
+        tmp.text = words;
+        if (c != null)
+        {
+            tmp.color = c;
+        }
+        announcement.GetComponent<Animation>().Play();
+
     }
 }
