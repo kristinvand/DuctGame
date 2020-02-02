@@ -79,7 +79,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973063081057602409}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2.53}
+  m_LocalPosition: {x: 0, y: 0.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7184832594894432117}
@@ -92,7 +92,7 @@ LineRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973063081057602409}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -126,7 +126,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 5}
+  - {x: 0, y: 0, z: -10}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -207,6 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a44780c2e8ee6492daf4ce393a13e02a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  taping: 0
 --- !u!114 &7184832594725810015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -639,7 +640,7 @@ MonoBehaviour:
   TapeRotationalVelocityZ: 1
   changeLaneDelay: 0
   changeLaneSpeed: 0.1
-  layTape: {fileID: 0}
+  layTape: {fileID: 3180514619726516442}
   isTaping: 0
 --- !u!95 &7184832594894431883
 Animator:
@@ -719,12 +720,12 @@ MonoBehaviour:
     m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7184832594894432118}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 7184832594894432119}
+        m_MethodName: OnFire
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
