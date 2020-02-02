@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts
@@ -12,12 +13,22 @@ namespace Assets.Scripts
 
     class MainMenuController : MonoBehaviour
     {
+        public GameObject StartButton;
+        public GameObject DuctTape1Button;
+        public GameObject BackFromCreditsButton;
         public GameObject CharacterSelectionFlow;
+        public GameObject CreditsFlow;
 
         public void TriggerCharacterSelection(bool show)
         {
             CharacterSelectionFlow.SetActive(show);
-            GUI.FocusControl(show ? "Duct" : "StartButton");
+            EventSystem.current.SetSelectedGameObject(show ? DuctTape1Button : StartButton);
+        }
+
+        public void TriggerCredits(bool show)
+        {
+            CreditsFlow.SetActive(show);
+            EventSystem.current.SetSelectedGameObject(show ? BackFromCreditsButton : StartButton);
         }
 
         public void LoadMainGame(string ColorChoice = "Duct")

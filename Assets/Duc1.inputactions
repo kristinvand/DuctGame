@@ -237,7 +237,7 @@
                 },
                 {
                     "name": "Submit",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "44645d9a-02b9-404d-8bf2-c9004fec2bfb",
                     "expectedControlType": "Button",
                     "processors": "",
