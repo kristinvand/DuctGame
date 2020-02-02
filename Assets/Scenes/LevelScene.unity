@@ -247,11 +247,16 @@ PrefabInstance:
     - target: {fileID: 7184832594894431880, guid: df4ae9feefc18e64c825424224f34c31,
         type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7184832594894431880, guid: df4ae9feefc18e64c825424224f34c31,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[10].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184832594894431880, guid: df4ae9feefc18e64c825424224f34c31,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7184832594894431880, guid: df4ae9feefc18e64c825424224f34c31,
@@ -287,6 +292,41 @@ PrefabInstance:
     - target: {fileID: 7184832594894431880, guid: df4ae9feefc18e64c825424224f34c31,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[10].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184832594894431880, guid: df4ae9feefc18e64c825424224f34c31,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184832594894431880, guid: df4ae9feefc18e64c825424224f34c31,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184832594894431880, guid: df4ae9feefc18e64c825424224f34c31,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_ActionId
+      value: 1a1f3d73-b3c5-46c8-8e2d-57d963cb8b92
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184832594894431880, guid: df4ae9feefc18e64c825424224f34c31,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_ActionName
+      value: Player/Quit Game[/Keyboard/escape,/XInputControllerWindows/start]
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184832594894431880, guid: df4ae9feefc18e64c825424224f34c31,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1745146099}
+    - target: {fileID: 7184832594894431880, guid: df4ae9feefc18e64c825424224f34c31,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184832594894431880, guid: df4ae9feefc18e64c825424224f34c31,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7184832594894432117, guid: df4ae9feefc18e64c825424224f34c31,
@@ -5597,6 +5637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a44780c2e8ee6492daf4ce393a13e02a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  VoiceClipProbability: 25
   taping: 0
   TapeSoundEffects:
   - {fileID: 8300000, guid: d726e8ab364364a68a28c9f53c9b6efd, type: 3}
